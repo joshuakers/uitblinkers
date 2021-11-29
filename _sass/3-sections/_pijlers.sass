@@ -1,67 +1,63 @@
 .pijlers
+  padding: 30px 0
   text-align: center
   background: url(../img/circle-scatter.svg)
   background-size: contain
   //background-position: center center
-  padding: 30px 0
 
   .section-title
-    background: $green
     display: inline-block
-    border-radius: 5px
-    padding: 20px 60px
-    line-height: 1
-    margin-top: 60px
-    box-shadow: $title-shadow
     position: relative
+    margin-top: 60px
+    padding: 20px 60px
+    background: $green
     border: solid lighten($green, 25%) 10px
+    border-radius: 5px
+    box-shadow: $title-shadow
 
     text-transform: uppercase
     letter-spacing: 0.1em
+    line-height: 1
     color: white
 
     span
       position: relative
 
     &::before
-      content: "4"
-      color: darken($green, 15%)
-      font-size: 200px
       position: absolute
+      content: "4"
       top: -92px
       left: 30px
-      //transform: rotate(10deg)
-
+      color: darken($green, 15%)
+      font-size: 200px
 
   .pijler-container
     display: flex
-    width: clamp(800px, 70vw, 1200px)
-    //width: 70vw
-    //ax-width: 1600px
-    //background-color: pink
     justify-content: space-around
     position: relative
     margin: 60px auto 30px
+    width: clamp(800px, 70vw, 1200px)
 
     .pijler
       display: flex
+      align-items: center
+      justify-content: center
+      margin: 0
       +size(15vw)
       max-width: 240px
       min-width: 160px
       max-height: 240px
       min-height: 160px
       aspect-ratio: 1
-      border-radius: 50%
       background-color: white
-      margin: 0
+      border: solid lighten($green, 20%) 10px
+      border-radius: 50%
       box-shadow: $card-shadow
-      align-items: center
-      justify-content: center
-      opacity: 0
-      transition: opacity 200ms ease-in-out, transform 600ms ease-in-out
       cursor: pointer
       z-index: 2
-      border: solid lighten($green, 20%) 10px
+      
+      transition: opacity 200ms ease-in-out, transform 600ms ease-in-out
+      opacity: 0
 
     .pijler-1
       transform: translateX(-250px)
@@ -82,11 +78,9 @@
       background: linear-gradient(0deg, $green 10%, lighten($green, 20%) 60%)
       z-index: 2
 
-
       span
         color: white
     
-
 
     .pijler.appear
       opacity: 1
@@ -122,18 +116,16 @@
 
   .pijler-card
     display: none
-    //position: absolute
     align-items: center
     background-color: white
-    //background: linear-gradient(90deg, lighten($green, 20%) -2%, lighten($green, 30%) 2%, white 9%)
-    border-radius: 10px
-    box-shadow: $card-shadow
     max-width: 1200px
     min-width: 180px
-    transform: translateY(-50px)
-    z-index: 1
     min-height: 270px
-    //border-left: solid $green 10px
+    box-shadow: $card-shadow
+    transform: translateY(-50px)
+    border-radius: 10px
+    z-index: 1
+
     animation: $foldDown
     
 
