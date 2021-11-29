@@ -1,0 +1,65 @@
+---
+---
+
+// Tools
+
+
+@import '1-tools/normalize';
+@import '1-tools/fonts';
+@import '1-tools/vars';
+@import '1-tools/bourbon/bourbon';
+@import '1-tools/animations';
+
+// ------------------------------------
+// Base
+
+
+@import '2-base/base';
+@import '2-base/placeholders';
+@import '2-base/proj-styles';
+
+
+// ------------------------------------
+// Sections
+
+@import '3-sections/header';
+@import '3-sections/become';
+@import '3-sections/what';
+@import '3-sections/pijlers';
+@import '3-sections/coaches';
+@import '3-sections/method';
+
+
+
+// ------------------------------------
+// Temporary Styling
+
+body {
+  background: $body-bg;
+  //background: url(../img/circle-scatter.svg);
+  height: 4000px;
+  width: 100vw;
+  overflow-x: hidden;
+  //cursor: none;
+}; 
+
+// cursor
+
+// .cursor {
+//   width: 1.5rem;
+//   height: 1.5rem;
+//   border: 3px solid $pink;
+//   border-radius: 50%;
+//   position: absolute;
+//   top: -10rem;
+//   left: -10rem;
+//   pointer-events: none;
+//   transform: translate(-50%,-50%);
+//   transform-origin: 100% 100%;
+//   transition: all .3s ease;
+//   transition-property: background,transform;
+//}
+
+
+
+// ------------------------------------

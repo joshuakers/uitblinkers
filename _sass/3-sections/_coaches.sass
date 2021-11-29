@@ -1,0 +1,122 @@
+.section-coaches
+  //height: 200px
+  text-align: center
+
+  .section-title
+    @extend %section-title
+    margin: 0px auto 60px
+    line-height: 1
+    background: white
+    color: $pink
+    //color: grey
+    //border: solid $pink 3px
+    display: inline-block
+    border-radius: 5px
+    line-height: 1
+    margin-top: 60px
+    box-shadow: $title-shadow
+    position: relative
+    padding: 20px 60px
+    border: solid lighten(pink, 5%) 10px
+
+
+
+.coaches-container
+  margin: 0 auto
+  justify-content: space-around
+  align-items: baseline
+  display: flex
+  width: clamp(800px, 80vw, 1000px)
+
+  .coach-card
+    width: 45%
+    position: relative
+    text-align: center
+    background-color: white
+    border-radius: 10px
+    cursor: pointer
+    box-shadow: $card-shadow
+
+    &:hover
+      //animation: $bounce1
+
+      .avatar
+        animation: $bounceDub
+      
+
+    h3
+      padding-top: 0px
+      color: $textColor
+      font-size: 20px
+      letter-spacing: 0.1em
+      margin-top: 5px
+      @extend %RobotoSlab-700
+      padding-bottom: 0px
+      margin-bottom: 0
+
+    .text
+      //position: absolute
+      margin: 0px 40px 5px 40px
+      text-align: left
+      text-align: justify
+      //display: none
+      opacity: 0
+      //transform: translateY(-200px)
+      font-size: 0px
+      transition: all 250ms ease-in-out
+
+    .chevron
+      margin-bottom: 10px
+      transform: rotate(180deg)
+
+
+
+  .coach-card.expanded
+    //height: 850px
+
+
+    .text
+      //display: block
+      margin: 20px 40px 10px 40px
+      opacity: 1
+      font-size: 14px
+      //transform: translateY(0)
+    .coach2-text
+      margin-bottom: 32px
+
+    .chevron
+      transform: rotate(0deg)
+      //margin-bottom: 20px
+
+  .coach-1
+    .avatar
+      @extend %avatar-settings
+      background-image: url(../img/abby-1.jpg)
+      background-position: 30% 50%
+      background-size: cover
+      //filter: grayscale(100%)
+
+  .coach-2
+    .avatar
+      @extend %avatar-settings
+      background-image: url(../img/suzanne.jpg)
+      background-position: 50% 35%
+      background-size: cover
+
+@media (max-width: 1020px)
+
+  .coaches-container
+    flex-direction: column
+    width: auto
+    align-items: center
+
+    .coach-card
+      width: 80%
+      transition: width 300ms ease-in-out
+
+    .coach-card.expanded
+      width: 95%
+    .coach-1
+      margin-bottom: 50px
+
+

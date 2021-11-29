@@ -1,0 +1,70 @@
+header
+  //height: 500px
+  //background: pink
+  //background:
+    image: url(../img/hero-bg.jpeg)
+    size: cover
+    repeat: no-repeat
+    position: 90% 50%
+
+
+  .navbar
+    background-color: white
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: fixed
+    width: 100%
+    z-index: 1
+    box-shadow: $card-shadow
+
+    img
+      height: 60px
+      margin-left: 20px
+
+    nav
+      margin-right: 10px
+
+      .nav-item
+        margin: 20px 10px 20px 0px
+
+
+  .hero-container
+    position: relative
+    //background: pink
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 120px
+    //padding-bottom: 40px
+    margin-bottom: 120px
+
+
+    .hero-img
+      //position: absolute
+      height: 300px
+      border: solid 15px white
+      border-radius: 4px
+      //box-shadow: lightgrey 0 6px 20px 3px
+      box-shadow: $card-shadow
+      transform: rotate(2deg)
+      //display: none
+
+    .hero-quote
+      //position: absolute
+      width: 300px
+      text-align: center
+      transform: rotate(-5deg)
+      margin-left: -120px
+      //margin-top: 80px
+
+      font:
+        family: 'Permanent Marker'
+        size: 50px
+      line-height: 0.8
+      color: $pink
+
+    .hero-quote-alt
+      margin-left: auto
+      margin-right: 150px
+      margin-top: 0px

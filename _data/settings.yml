@@ -1,0 +1,12 @@
+title: 'Uitblinkers Kindercoaches'
+name: 'Uitblinkers'
+slogan: '"a happy child makes the world smile"'
+
+
+menu:
+- {name: Wat we doen, url: '#what'}
+- {name: Pijlers, url: '#pijlers'}
+- {name: De coaches, url: '#coaches'}
+- {name: werkwijze, url: '#method'}
+- {name: tarieven, url: '#tarieven'}
+- {name: Contact, url: '#contact'}
