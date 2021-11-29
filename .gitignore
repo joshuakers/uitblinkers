@@ -1,5 +1,7 @@
 _site
+_data
 .sass-cache
 .jekyll-cache
+.pug-cache/_includes
 .jekyll-metadata
 vendor
