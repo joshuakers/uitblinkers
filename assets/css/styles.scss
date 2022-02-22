@@ -28,6 +28,7 @@
 @import '3-sections/pijlers';
 @import '3-sections/coaches';
 @import '3-sections/method';
+@import '3-sections/footer';
 
 
 
@@ -37,7 +38,7 @@
 body {
   background: $body-bg;
   //background: url(../img/circle-scatter.svg);
-  height: 4000px;
+  //height: 4000px;
   width: 100vw;
   overflow-x: hidden;
   //cursor: none;

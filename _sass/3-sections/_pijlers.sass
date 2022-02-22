@@ -1,10 +1,12 @@
 .pijlers
   padding: 30px 0
   text-align: center
- 
-  background: url(../img/circle-scatter.svg)
+
+  //background: url(../img/circle-scatter.svg)
   //background-color: #dff1ec
-  background-size: contain
+  //background-size: contain
+
+  //background: $green
   //background-position: left center
 
   .section-title
@@ -57,7 +59,7 @@
       box-shadow: $card-shadow
       cursor: pointer
       z-index: 2
-      
+
       transition: opacity 200ms ease-in-out, transform 600ms ease-in-out
       opacity: 0
 
@@ -74,7 +76,7 @@
     .pijler-4
       transform: translateX(250px)
       transition-delay: 100ms
-    
+
     .active
       background: $green
       background: linear-gradient(0deg, $green 10%, lighten($green, 20%) 60%)
@@ -82,7 +84,7 @@
 
       span
         color: white
-    
+
 
     .pijler.appear
       opacity: 1
@@ -129,18 +131,18 @@
     z-index: 1
 
     animation: $foldDown
-    
+
 
     .pijler-card-text
       padding: 40px 100px
       margin: 0
       text-align: justify
-      
+
       animation: $bounce1
-  
+
     &:nth-child(n+2)
       //display: none
-  
+
   .is-open
     display: flex
 
@@ -175,4 +177,3 @@
         display: none
 
     .pijler-container
-    
