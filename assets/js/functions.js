@@ -16,9 +16,9 @@ $(".mobileNav").find('li').on("click", function () {
 
 // Pillar Card Show
 
-$(".pijler").on("click", function() { 
+$(".pijler").on("click", function() {
   var position = $(this).parent().children().index($(this));
-  
+
   $(".pijler-card").eq(position).toggleClass("is-open").siblings().removeClass("is-open");
   $(this).toggleClass("active").siblings().removeClass("active");
 });
@@ -38,10 +38,10 @@ $(".pijler-3").on("click", function () {
 });
 $(".pijler-4").on("click", function () {
   $(".pijler-card-4").toggleClass("is-open")
-  .siblings().removeClass("is-open");  
+  .siblings().removeClass("is-open");
 }); */
 
- 
+
 // Coaches Text Expand
 
 $(".coach-card").on("click", function () {
@@ -60,7 +60,7 @@ $(".scroll").on("click", function (event) {
   event.preventDefault();
   $('body,html').animate( {
     scrollTop: $(this.hash).offset().top
-  }, 800 ) 
+  }, 800 )
 
 });
 
@@ -71,7 +71,7 @@ $(".scroll").on("click", function (event) {
   const navToggle = document.querySelector(".mobileNavToggle")
 
   const sectionOneOptions = {
-    rootMargin: "-100px 0px 0px 0px"
+    rootMargin: "-150px 0px 0px 0px"
   };
 
   const sectionOneObserver = new IntersectionObserver(function (
@@ -93,7 +93,7 @@ $(".scroll").on("click", function (event) {
 
   sectionOneObserver.observe(hero);
 
-/* 
+/*
 
 // Pijlers Intersection Observer
 

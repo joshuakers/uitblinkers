@@ -1,13 +1,9 @@
 .pijlers
   padding: 30px 0
   text-align: center
-
   //background: url(../img/circle-scatter.svg)
-  //background-color: #dff1ec
   //background-size: contain
-
-  //background: $green
-  //background-position: left center
+  //background-position: center center
 
   .section-title
     display: inline-block
@@ -52,7 +48,7 @@
       min-width: 160px
       max-height: 240px
       min-height: 160px
-      aspect-ratio: 1
+      //aspect-ratio: 1
       background-color: white
       border: solid lighten($green, 20%) 10px
       border-radius: 50%
@@ -109,7 +105,7 @@
 .pijler-card-container
   //background: pink
   display: flex
-  width: clamp(800px, 70vw, 1200px)
+  width: clamp(100vw, 70vw, 1200px)
   //width: 1200px
   justify-content: space-around
   position: relative
@@ -160,11 +156,22 @@
 
       .pijler
         margin-top: 20px
+        border-radius: 15px
+        height: 70px
+        width: 80vw
+        min-width: 80vw
+        max-height: inherit
+        min-height: inherit
 
         &:nth-child(1)
           margin-top: 0
 
-@media (max-width: 460px)
+    .pijler-card-container
+      .pijler-card
+        .pijler-card-text
+          padding: 35px
+
+@media (max-width: 380px)
 
   .pijlers
 
@@ -172,8 +179,10 @@
       margin-top: 20px
       font-size: 22px
       padding: 10px 40px
-
       &::before
         display: none
 
-    .pijler-container
+    //.pijler-card-container
+      .pijler-card
+        .pijler-card-text
+          padding: 0
